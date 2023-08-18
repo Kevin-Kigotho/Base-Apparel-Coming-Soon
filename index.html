@@ -14,22 +14,59 @@
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
 
+  <!--  -->
+  <body>
+    <main>
+      <div class="container">
+        <header class="content">
+          <!-- Logo -->
+          <nav>
+            <a href="index.html" class="logo"
+              ><img src="images/logo.svg" alt="logo"
+            /></a>
+          </nav>
+
+          <!-- Header Content -->
+          <div class="content">
+            <div class="content__img">
+              <img src="images/hero-mobile.jpg" alt="Hero Image" />
+            </div>
+            <div class="content__text">
+              <h1>
+                <span>We're</span>
+                <br />
+                coming
+                <br />
+                soon
+              </h1>
+              <p>
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+              <form>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                  <button type="submit">
+                    <img src="images/icon-arrow.svg" alt="arrow svg" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </header>
+        <div class="intro-img"></div>
+      </div>
+    </main>
     <footer>
       <p class="attribution">
         Challenge by
