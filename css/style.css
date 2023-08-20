@@ -34,10 +34,12 @@
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 img {
   width: 100%;
+  display: inline-block;
 }
 
 input[type="email"] {
@@ -53,24 +55,35 @@ body {
   background-image: var(--linear-gradient-light);
 }
 
-/* Content Section */
+/* Header Section */
 
-.content {
+header {
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/bg-pattern-desktop.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  overflow-x: hidden;
 }
 
-.content nav {
+/* Navbar */
+.intro nav {
   padding: var(--page-padding);
 }
 
-.content nav a img {
+.intro .navbar img {
   width: 7rem;
 }
 
+/* Content Section */
+
+.content .content__img {
+  /* border: 2px solid red; */
+}
+
 .content .content__text {
+  /* border: 2px solid red; */
   padding: var(--page-padding);
   text-align: center;
   margin-top: 3rem;
@@ -79,7 +92,7 @@ body {
 .content .content__text h1 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -107,7 +120,7 @@ form .form-container input {
   width: 100%;
   outline: none !important;
   border: none;
-  font-size: 1.1rem;
+  /* font-size: 1rem; */
 }
 
 form .form-container input::placeholder {
@@ -116,16 +129,17 @@ form .form-container input::placeholder {
 
 form .form-container button {
   position: absolute;
-  border: 1px solid red;
-  border-radius: 3rem;
+  /* border: 1px solid red; */
+  border-radius: 5rem;
   /* top: 50%;
   right: 0; */
   position: absolute;
   top: 50%;
   right: -2px;
   transform: translate(-0%, -50%);
-  padding: 1.3rem 2.2rem;
-  background-color: red;
+  padding: 1.3rem 2rem;
+  background-image: var(--linear-gradient-red);
+  border: none;
 }
 
 /* Footer */
@@ -133,7 +147,7 @@ form .form-container button {
   font-size: 0.8rem;
   text-align: center;
   padding: 2rem 9%;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
