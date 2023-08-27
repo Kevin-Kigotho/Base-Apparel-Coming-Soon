@@ -38,8 +38,10 @@ a {
 }
 
 img {
-  width: 100%;
+  /* max-width: 100%;
+  height: auto; */
   display: inline-block;
+  /* object-fit: cover; */
 }
 
 input[type="email"] {
@@ -52,7 +54,11 @@ html {
 
 body {
   font-family: var(--ff-body);
-  background-image: var(--linear-gradient-light);
+  /* background-image: var(--linear-gradient-light); */
+}
+
+.container {
+  border: 2px solid blue;
 }
 
 /* Header Section */
@@ -89,7 +95,7 @@ header {
   margin-top: 3rem;
 }
 
-.content .content__text h1 {
+.content__text h1 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-size: 3rem;
@@ -159,11 +165,11 @@ form .form-container button {
 
 @media screen and (min-width: 674px) {
   main {
-    height: 100vh;
+    /* height: 80vh; */
   }
 
   .container {
-    /* height: 100vh; */
+    /* height: 80vh; */
     /* width: 100vw; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -171,6 +177,11 @@ form .form-container button {
 
   header.intro {
     padding: 2rem 6rem;
+  }
+
+  .content__text h1 {
+    font-size: 5rem;
+    letter-spacing: 1rem;
   }
 
   .content__img {
@@ -182,13 +193,14 @@ form .form-container button {
   }
 
   .intro__img {
-    border: 2px solid red;
     display: initial;
-  }
-
-  /* .intro__img img {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
+    /* background-image: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
   } */
+
+  .intro__img img {
+    
+  }
 }
