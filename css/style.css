@@ -142,6 +142,10 @@ form .form-container button {
   border: none;
 }
 
+.intro__img {
+  display: none;
+}
+
 /* Footer */
 .attribution {
   font-size: 0.8rem;
@@ -151,4 +155,40 @@ form .form-container button {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 674px) {
+  main {
+    height: 100vh;
+  }
+
+  .container {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header.intro {
+    padding: 2rem 6rem;
+  }
+
+  .content__img {
+    display: none;
+  }
+
+  .content .content__text {
+    text-align: left;
+  }
+
+  .intro__img {
+    border: 2px solid red;
+    display: initial;
+  }
+
+  /* .intro__img img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  } */
 }
